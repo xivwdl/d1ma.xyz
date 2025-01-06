@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('fonts/arialnarrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('fonts/arialnarrow_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('fonts/arialnarrow_bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('fonts/arialnarrow_italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --accent: #00E13F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#p5-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.content-wrapper {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px 0 20px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.intro {
+    margin: 0;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.section {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: none;
+    transition: all 0.1s ease;
+    display: block;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: var(--accent);
+    border-bottom: none;
+}
